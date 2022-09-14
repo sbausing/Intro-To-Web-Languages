@@ -1,21 +1,28 @@
-<html>
-    <body>
-        <input id="name-input" type="text" placeholder="Enter your name" />
-        <button id="my-button">Click Me</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="name-input" type="text" placeholder="Enter your name" />
+    <button id="my-button">Click Me</button>
 
-        <script>
-            // Declares a varaiable called myButton that is initialized to the button query in the document
-            var myButton = document.querySelector('#my-button');
-            // Declares a variable caled nameInput that is initialied to the name input box in the document
-            var nameInput = document.querySelector('#name-input');
+    <script>
+        // Declares a varaiable called myButton that is initialized to the button query in the document
+        var myButton = document.querySelector('#my-button');
+        // Declares a variable caled nameInput that is initialied to the name input box in the document
+        var nameInput = document.querySelector('#name-input');
 
-            // Causes the script to pay attention to the state of the button object and call the function if it is clicked
-            // The function causes the document to display an alert with the text "Hello " and whatever text was entered into the name input box as long as it was not left empty
-            myButton.addEventListener('click', function () {
-                if (nameInput.value !== '') {
-                    alert('Hello ' + nameInput.value);
-                }
-            });
-        </script>
-    </body>
+        // Causes the script to pay attention to the state of the button object and call the function if it is clicked
+        // The function causes the document to display an alert with the text "Hello " and whatever text was entered into the name input box as long as it was not left empty
+        myButton.addEventListener('click', function () {
+            if (nameInput.value !== '') {
+                alert('Hello ' + nameInput.value);
+            }
+        });
+    </script>
+</body>
 </html>
